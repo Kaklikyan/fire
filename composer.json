@@ -1,0 +1,13 @@
+{
+    "name": "norayr/firebase",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Norayr (Brain)",
+            "email": "noro9424@gmail.com"
+        }
+    ],
+    "require": {
+        "kreait/firebase-php": "^4.18"
+    }
+}
