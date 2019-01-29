@@ -13,19 +13,19 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6">
-                <form>
+                <form id="category-form">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Create category</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="category">Create category</label>
+                        <input type="text" class="form-control" id="category" name="category">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
             <div class="col-md-6">
-                <form>
+                <form id="level-form">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Create level</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="level">Create level</label>
+                        <input type="text" class="form-control" id="level" name="level">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
