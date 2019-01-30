@@ -7,4 +7,4 @@ session_unset();
 unset($_SESSION["loggedin"]);
 $_SESSION = array();
 
-header('location: index.php');
+header('location: /');

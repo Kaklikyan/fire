@@ -14,12 +14,10 @@ if ($_POST) {
     switch ($_POST['action']){
         case 'category':
             $model = new Category();
-            $model->create($_POST["data"]);
-            break;
+            return $model->create($_POST["data"]);
         case 'level':
             $model = new Level();
-            $model->create($_POST["data"]);
-            break;
+            return $model->create($_POST["data"]);
         default:
             $model = new Question();
             $model->create($_POST);

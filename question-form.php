@@ -3,13 +3,8 @@
     use models\Level;
     use models\Category;
 
-    session_start();
-
-    if(!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"] === true){
-        header("location: index.php");
-        exit;
-    }
-
+    require_once('shared/header.php');
+    require_once('shared/nav.php');
     require 'models/Level.php';
     require 'models/Category.php';
 
@@ -20,9 +15,6 @@
     $categories = $model->getCategories();
 
     $levelRadio = $categoryRadio = true;
-
-    require_once('shared/header.php');
-    require_once('shared/nav.php');
 ?>
     <div class="container mt-5">
         <div class="row">
@@ -65,6 +57,9 @@
                         <textarea class="form-control" id="description" name="description"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="spinner-border text-primary spinner-additional" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
                 </form>
             </div>
         </div>

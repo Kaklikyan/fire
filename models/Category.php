@@ -16,6 +16,7 @@ class Category extends DB
     public function create($category)
     {
         $this->database->getReference($this->dbname)->push($category);
+        exit(json_encode($this->getCategories()));
     }
 
     public function getCategories()

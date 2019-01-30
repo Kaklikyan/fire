@@ -8,7 +8,7 @@ use models\User;
 
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: category.php");
+    header("location: category-form");
     exit;
 }
 
@@ -45,7 +45,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 $_SESSION["loggedin"] = true;
                 $_SESSION["id"] = 1;
                 $_SESSION["login"] = $login;
-                header("location: category.php");
+                header("location: category-form");
             } else {
                 $password_err = "The password you entered was not valid.";
             }

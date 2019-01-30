@@ -16,6 +16,7 @@ class Level extends DB
     public function create($level)
     {
         $this->database->getReference($this->dbname)->push($level);
+        exit(json_encode($this->getLevels()));
     }
 
     public function getLevels()

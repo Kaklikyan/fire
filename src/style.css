@@ -179,3 +179,9 @@ ul ul a {
     color: red !important;
     margin-left: 26px;
 }
+
+.spinner-additional {
+    vertical-align: middle;
+    margin-left: 1em;
+    display: none;
+}
